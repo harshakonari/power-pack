@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bag Promotion</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #f5f5f5; text-align: center; }
+        header { background-color: #222; color: white; padding: 20px; font-size: 24px; }
+        .promo { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 50px auto; max-width: 900px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+        .promo-content { flex: 1; padding: 20px; }
+        .promo h2 { color: #333; font-size: 28px; }
+        .promo p { font-size: 18px; color: #666; margin: 10px 0; }
+        .btn { display: inline-block; text-decoration: none; background: #ff6f61; color: white; padding: 10px 20px; border-radius: 5px; font-size: 18px; transition: background 0.3s; margin: 5px; }
+        .btn:hover { background: #e65c50; }
+        .promo-image img { max-width: 100%; border-radius: 10px; }
+        .feature-buttons { display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
+        .feature-buttons .feature-btn { background: #333; color: white; padding: 12px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: 0.3s; }
+        .feature-buttons .feature-btn:hover { background: #555; }
+        footer { margin-top: 30px; background-color: #222; color: white; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>POWER PACK</h1>
+    </header>
+
+    <section class="promo">
+        <div class="promo-content">
+            <h2>Human power generator backpack</h2>
+            <p>Upgrade your style with our latest leather bags. Perfect for every occasion.</p>
+            
+            <!-- Shop Now Button Navigates to shop.html -->
+            <a href="https://forms.gle/XeuWFuuJHJph4Ad37">Shop Now</a>
+
+            <!-- Feature Buttons Navigate to Respective Pages -->
+            <div class="feature-buttons">
+                <button class="feature-btn" onclick="navigateToPage('quality.html')">✔&nbsp&nbspDURABILITY &nbsp</button>
+                <button class="feature-btn" onclick="navigateToPage('design.html')">🎨 Unique Design</button>
+                <button class="feature-btn" onclick="navigateToPage('durability.html')">🔧 More Information</button>
+                <button class="feature-btn" onclick="navigateToPage('affordable.html')">💰 Affordable Price</button>
+            </div>
+        </div>
+        <div class="promo-image">
+            <img src="powerpack pic.jpg" alt="Premium Leather Bag" height="500" width="500">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Bag Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to navigate to respective pages
+        function navigateToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>
